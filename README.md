@@ -21,4 +21,4 @@ JS, CSS, HTML, WebPack, GIT, Babel.
 
 ### Ссылка на проект
 
-
+https://andrewlapshov.github.io/VK-API-Test-Task/
