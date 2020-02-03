@@ -1,0 +1,14 @@
+@import url('./__avatar/user__avatar.css');
+@import url('./__text/user__text.css');
+@import url('./__wrapper/user__wrapper.css');
+@import url('./__search-input/user__search-input.css');
+@import url('./__search-form/user__search-form.css');
+@import url('./__search-label/user__search-label.css');
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 24px;
+}

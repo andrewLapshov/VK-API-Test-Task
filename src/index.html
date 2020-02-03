@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="desciption"
+      content="Тестовое задание на позицию Junior Frontend Developer"
+    />
+    <script
+      src="https://vk.com/js/api/openapi.js?166"
+      type="text/javascript"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="<%=htmlWebpackPlugin.files.chunks.main.css %>"
+    />
+    <link
+      rel="shortcut icon"
+      href="<%=require('./favicon.png').default%>"
+      type="image/x-icon"
+    />
+    <title>VK API Test Task</title>
+  </head>
+
+  <body>
+    <div class="root">
+      <header class="header">
+        <div class="header__container">
+          <span class="header__logo">VK Info</span>
+        </div>
+      </header>
+
+      <main>
+        <section class="lead">
+          <div class="lead__container"></div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <p class="footer__copyright">&#169; 2020. Андрей Лапшов</p>
+        </div>
+      </footer>
+    </div>
+
+    <template class="intro-template">
+      <div class="lead__intro component">
+        <h1 class="lead__title">
+          Получи информацию о своих друзьях в популярной соцсети
+        </h1>
+        <p class="lead__text">
+          Добро пожаловать! Нажми кнопку ниже, чтобы авторизоваться через
+          учётную запись VK.com
+        </p>
+        <button class="button button_section_intro">Войти</button>
+        <span class="error-message"></span>
+      </div>
+    </template>
+
+    <template class="workspace-template">
+      <div class="lead__workspace component">
+        <div class="user">
+          <img src="" alt="" class="user__avatar" />
+          <p class="user__text user__text_name"></p>
+          <p class="user__text">
+            Количество друзей:
+            <span class="user__text user__text_friends-num"></span>
+          </p>
+          <label for="search" class="user__search-label"
+            >Поиск по друзьям:</label
+          >
+          <form class="user__search-form">
+            <input
+              type="text"
+              name="search"
+              class="user__search-input"
+              placeholder="Введите имя или фамилию друга"
+            />
+            <button class="button button_section_lead">Искать</button>
+          </form>
+          <span class="error-message"></span>
+        </div>
+        <div class="user-card-list"></div>
+      </div>
+    </template>
+
+    <template class="user-card-template">
+      <div class="user-card component">
+        <img src="" alt="" class="user-card__avatar" />
+        <p class="user-card__name"></p>
+      </div>
+    </template>
+
+    <template class="button-logout-template">
+      <button class="button button_section_header component">Выйти</button>
+    </template>
+
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+  </body>
+</html>

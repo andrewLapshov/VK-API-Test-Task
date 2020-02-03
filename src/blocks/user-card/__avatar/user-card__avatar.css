@@ -1,0 +1,7 @@
+.user-card__avatar {
+  max-width: 200px;
+  object-fit: contain;
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto 20px;
+}

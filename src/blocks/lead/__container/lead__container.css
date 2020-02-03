@@ -1,0 +1,6 @@
+.lead__container {
+  margin: 0 auto;
+  max-width: 1440px;
+  box-sizing: border-box;
+  padding: 24px 12px;
+}

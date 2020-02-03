@@ -1,0 +1,38 @@
+.button {
+  width: 150px;
+  height: 50px;
+  background: #4a76a8;
+  box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+  border-radius: 10px;
+  padding: 0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.button_section_intro {
+  margin-bottom: 16px;
+}
+
+.button_section_lead {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.button_section_header {
+  background: #ffffff;
+  color: black;
+}
+
+@media screen and  (max-width: 426px){
+  .button_section_lead {
+    position: static;
+    width: 100%;
+  }
+}
