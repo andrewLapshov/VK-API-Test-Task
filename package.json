@@ -1,5 +1,6 @@
 {
   "name": "vk-api",
+  "homepage": "https://github.com/andrewLapshov/VK-API-Test-Task",
   "version": "1.0.0",
   "description": "vk api test task for hiring",
   "main": "index.js",
